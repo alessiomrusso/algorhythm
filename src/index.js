@@ -1,2 +1,3 @@
-import Fibonacci from './fibonacci.js';
-export { Fibonacci };
+import { fibonacci } from './fibonacci.js';
+
+export { fibonacci }
