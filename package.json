@@ -4,21 +4,13 @@
   "description": "JavaScript library implementing most common algorithms and data structures",
   "main": "lib/algorhythm.js",
   "scripts": {
-    "build": "webpack --env build",
+    "build": "webpack --display-error-details --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
     "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
   },
   "devDependencies": {
-    "babel-cli": "6.24.1",
-    "babel-core": "6.24.1",
-    "babel-loader": "7.0.0",
-    "babel-plugin-add-module-exports": "0.2.1",
-    "babel-preset-es2015": "6.24.1",
-    "chai": "3.5.0",
-    "mocha": "3.3.0",
-    "webpack": "3.1.0",
-    "yargs": "7.1.0"
+    "eslint": "^4.11.0"
   },
   "repository": {
     "type": "git",
@@ -26,5 +18,11 @@
   },
   "author": "Alessio M. Russo",
   "license": "MIT",
-  "homepage": "https://github.com/alessiomrusso/algorhythm"
+  "homepage": "https://github.com/alessiomrusso/algorhythm",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "babel-loader": "^8.0.0-beta.0",
+    "webpack": "^3.8.1"
+  }
 }
