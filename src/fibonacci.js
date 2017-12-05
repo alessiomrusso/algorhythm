@@ -1,4 +1,4 @@
-export default function fibonacci(index, cache) {
+export function fibonacci(index, cache) {
 	cache = cache || [];
 	if(cache[index]) {
 		return cache[index];
@@ -15,4 +15,4 @@ export default function fibonacci(index, cache) {
 		}
 	}
 	return cache[index];
-};
+}
