@@ -4,7 +4,9 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'algorhythm.js'
+    filename: 'algorhythm.js',
+    libraryTarget: "var",
+    library: "Al"
   },
   module: {
     rules: [
